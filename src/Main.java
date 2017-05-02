@@ -9,11 +9,11 @@ public class Main {
         for(int i = 1; i <= 12; i++) {
             for(int j = 1; j <= 12; j++) {
                 int k = i * j;
-                if(k % 12 != 0) {
-                    System.out.print(k + "   ");
+                if(j % 12 != 0) {
+                    System.out.printf("%4d", k);
                 }
                 else {
-                    System.out.print(k + "\n");
+                    System.out.printf("%4d%n", k);
                 }
             }
             
